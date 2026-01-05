@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Portfolio | Tariq Jamil</title>
+    <link rel="stylesheet" href="protfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- PDF.js for embedded CV viewer -->
+    <script src="jamil_resume.pdf"></script>
+    <link rel="jamil_resume" href="jamil_resume.pdf">
+</head>
+<body class="light-theme">
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+            <span>Dark Mode</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">AeroSoft<span>.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                <li><a href="#academic" class="nav-link">Academic</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h3 class="intro">Hello, I'm</h3>
+                <h1 class="name animate-text">Tariq Jamil</h1>
+                <h2 class="title">Computer Science Student</h2>
+                <p class="description">Department of Computer Science, UET Peshawar Abbottabad Campus | Registration No: 2025-CS-03363</p>
+                <a href="#profile" class="btn explore-btn">Explore My Portfolio <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="Personal.jfif" alt="Profile Picture" class="profile-img">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Personal Profile Section -->
+    <section id="profile" class="section profile-section">
+        <div class="container">
+            <h2 class="section-title">Personal Profile</h2>
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-img-container">
+                            <img src="Personal.jfif" alt="Profile Picture" class="profile-img-main">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Tariq Jamil</h3>
+                            <p class="reg-no">Registration: 2025-CS-03363</p>
+                            <p class="tagline">Passionate Developer & Problem Solver</p>
+                        </div>
+                    </div>
+                    <div class="profile-body">
+                        <h4>Bio Data</h4>
+                        <p>I'm a dedicated Computer Science student at UET Peshawar Abbottabad Campus with a passion for web development and software engineering. My journey in technology started at a young age, and I've been constantly expanding my skills ever since.</p>
+                        
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <h5>Date of Birth</h5>
+                                    <p>May 5, 2005</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Abbottabad, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>tariqjamil4241@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>+92 3435545246</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills">
+                            <h4>Technical Skills</h4>
+                            <div class="skill-bars">
+                                <div class="skill">
+                                    <span>HTML/CSS</span>
+                                    <div class="progress-bar">
+                                        <div class="progress" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>JavaScript</span>
+                                    <div class="progress-bar">
+                                        <div class="progress" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>React.js</span>
+                                    <div class="progress-bar">
+                                        <div class="progress" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>C++</span>
+                                    <div class="progress-bar">
+                                        <div class="progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Background Section -->
+    <section id="academic" class="section academic-section">
+        <div class="container">
+            <h2 class="section-title">Academic Background</h2>
+            <p class="section-subtitle">My educational journey from primary to university level</p>
+            
+            <div class="table-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search by institution, degree, or year...">
+                </div>
+                <div class="filter-sort">
+                    <select id="filter-level">
+                        <option value="all">All Levels</option>
+                        <option value="primary">Primary</option>
+                        <option value="secondary">Secondary</option>
+                        <option value="higher">Higher Secondary</option>
+                        <option value="university">University</option>
+                    </select>
+                    <button id="sort-year" class="sort-btn">Sort by Year <i class="fas fa-sort"></i></button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Institution</th>
+                            <th>Degree/Program</th>
+                            <th>Year</th>
+                            <th>Grade/GPA</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="academic-timeline">
+                <h3>Educational Timeline</h3>
+                <div class="timeline">
+                    <!-- Timeline will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive CV Viewer Section -->
+    <section id="cv" class="section cv-section">
+        <div class="container">
+            <h2 class="section-title">Interactive CV Viewer</h2>
+            <p class="section-subtitle">View or download my detailed Curriculum Vitae</p>
+            
+            <!-- Real CV Viewer Section -->
+            <div class="real-cv-container">
+                <div class="cv-instructions">
+                    <h4><i class="fas fa-info-circle"></i> How to view my CV:</h4>
+                    <ul>
+                        <li>Use the navigation buttons below to flip through pages</li>
+                        <li>Zoom in/out for better readability</li>
+                        <li>Download the full CV using the download button</li>
+                        <li>The CV is already loaded below</li>
+                    </ul>
+                </div>
+                
+                <div class="cv-container">
+                    <div class="cv-controls">
+                        <button id="prev-page" class="cv-btn"><i class="fas fa-chevron-left"></i> Previous</button>
+                        <span id="page-info">Page <span id="page-num">1</span> of <span id="page-count">1</span></span>
+                        <button id="next-page" class="cv-btn">Next <i class="fas fa-chevron-right"></i></button>
+                        <a href="jamil_resume.pdf" download="Tariq_Jamil_CV.pdf" class="cv-btn download"><i class="fas fa-download"></i> Download CV</a>
+                        <button id="zoom-in" class="cv-btn"><i class="fas fa-search-plus"></i></button>
+                        <button id="zoom-out" class="cv-btn"><i class="fas fa-search-minus"></i></button>
+                    </div>
+                    
+                    <div class="pdf-viewer">
+                        <div id="pdf-container">
+                            <canvas id="pdf-canvas"></canvas>
+                            <div class="pdf-placeholder" id="pdf-placeholder">
+                                <i class="fas fa-file-pdf"></i>
+                                <h3>Loading your CV...</h3>
+                                <p>Please wait while we load your CV preview</p>
+                                <div id="pdf-progress" style="margin-top: 20px;">
+                                    <div style="width: 100%; height: 10px; background-color: var(--border-color); border-radius: 5px; overflow: hidden;">
+                                        <div id="pdf-progress-bar" style="width: 0%; height: 100%; background-color: var(--accent-color); transition: width 0.3s;"></div>
+                                    </div>
+                                    <p id="pdf-loading-text" style="margin-top: 10px; font-size: 0.9rem;">Initializing...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="real-cv-actions">
+                        <button id="real-view-cv" class="real-cv-btn view"><i class="fas fa-eye"></i> View Full Screen</button>
+                        <a href="jamil_resume.pdf" download="Tariq_Jamil_CV.pdf" class="real-cv-btn download"><i class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Send me a message and I'll get back to you as soon as possible</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>University of Engineering & Technology, Peshawar Abbottabad Campus, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>tariqjamil4241@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 3435545246</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Connect with me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tariq-jamil-186644350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Tariq-Jamil246" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/17cVTbBLDH/" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name">
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery (Bonus Feature) -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects Gallery</h2>
+            <p class="section-subtitle">A showcase of my recent work and projects</p>
+            
+            <div class="gallery-controls">
+                <button id="prev-project" class="gallery-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery-indicator">
+                    <span id="current-project">1</span> / <span id="total-projects">5</span>
+                </div>
+                <button id="next-project" class="gallery-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="projects-carousel">
+                <div class="carousel-container">
+                    <!-- Project slides will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="project-dots">
+                <!-- Dots will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracker (Bonus Feature) -->
+    <section id="progress" class="section progress-section">
+        <div class="container">
+            <h2 class="section-title">Project Progress Tracker</h2>
+            <p class="section-subtitle">Tracking my current projects and tasks</p>
+            
+            <div class="progress-tracker">
+                <div class="tracker-header">
+                    <h3>Current Projects</h3>
+                    <button id="add-task" class="btn add-task-btn"><i class="fas fa-plus"></i> Add New Task</button>
+                </div>
+                
+                <div class="tasks-container">
+                    <!-- Tasks will be populated by JavaScript -->
+                </div>
+                
+                <div class="progress-summary">
+                    <h4>Overall Progress</h4>
+                    <div class="summary-stats">
+                        <div class="stat">
+                            <span class="stat-value" id="total-tasks">0</span>
+                            <span class="stat-label">Total Tasks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="completed-tasks">0</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="progress-percentage">0%</span>
+                            <span class="stat-label">Progress</span>
+                        </div>
+                    </div>
+                    <div class="overall-progress-bar">
+                        <div class="overall-progress" id="overall-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Portfolio<span>.</span></h3>
+                    <p>Dynamic Portfolio Website<br>Department of Computer Science<br>UET Abbottabad Campus</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#academic">Academic</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> UET Peshawar Abbottabad Campus, Pakistan</p>
+                    <p><i class="fas fa-envelope"></i> tariqjamil4241@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +92 3435545246</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tariq Jamil. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
